@@ -1,60 +1,95 @@
-@echo off
-SETLOCAL
+#!/bin/bash
+set -euo pipefail
 
-echo ===============================
-echo   Ultimate Chrome + AIO Setup
-echo ===============================
+HOME_DIR="${HOME:-/root}"
+DESKTOP_DIR="$HOME_DIR/Desktop"
+TMP_CHROME_DEB="/tmp/google-chrome-stable_current_amd64.deb"
+TMP_AIO_EXE="/tmp/aio-runtimes_v2.5.0.exe"
 
-:: ---------------------------
-:: Step 1: Remove old Chrome (if exists)
-:: ---------------------------
-echo Removing old Google Chrome...
-IF EXIST "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" (
-    echo Found 32-bit Chrome, uninstalling...
-    powershell -Command "Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -like '*Chrome*'} | ForEach-Object { $_.Uninstall() }"
-) ELSE IF EXIST "%ProgramFiles%\Google\Chrome\Application\chrome.exe" (
-    echo Found 64-bit Chrome, uninstalling...
-    powershell -Command "Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -like '*Chrome*'} | ForEach-Object { $_.Uninstall() }"
-) ELSE (
-    echo No existing Chrome found.
-)
+echo "===== Ultimate Chrome + Wine + AIO Setup ====="
 
-:: ---------------------------
-:: Step 2: Download latest Google Chrome
-:: ---------------------------
-echo Downloading Google Chrome...
-powershell -Command "Invoke-WebRequest -Uri 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile '%TEMP%\chrome_installer.exe'"
+# ---------------------------
+# Step 1: Remove old Chrome
+# ---------------------------
+echo "Removing old Google Chrome (if exists)..."
+sudo apt remove --purge google-chrome-stable -y || true
+sudo apt autoremove -y || true
+rm -rf "$HOME_DIR/.config/google-chrome"
 
-:: ---------------------------
-:: Step 3: Install Chrome silently
-:: ---------------------------
-echo Installing Google Chrome silently...
-start /wait "" "%TEMP%\chrome_installer.exe" /silent /install
-echo Chrome installation complete.
+# ---------------------------
+# Step 2: Download & install Chrome
+# ---------------------------
+echo "Downloading Google Chrome..."
+wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O "$TMP_CHROME_DEB"
 
-:: ---------------------------
-:: Step 4: Create desktop shortcut
-:: ---------------------------
-echo Creating desktop shortcut for Chrome...
-SET DESKTOP="%USERPROFILE%\Desktop\Google Chrome.lnk"
-powershell -Command "$s=(New-Object -COM WScript.Shell).CreateShortcut(%DESKTOP%);$s.TargetPath='%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe';$s.Save()"
+echo "Installing Google Chrome..."
+sudo apt update
+sudo apt install -y "$TMP_CHROME_DEB"
+rm -f "$TMP_CHROME_DEB"
 
-:: ---------------------------
-:: Step 5: Download AIO Runtimes
-:: ---------------------------
-echo Downloading AIO Runtimes...
-powershell -Command "Invoke-WebRequest -Uri 'https://allinoneruntimes.org/files/aio-runtimes_v2.5.0.exe' -OutFile '%TEMP%\aio-runtimes_v2.5.0.exe'"
+# ---------------------------
+# Step 3: Create Desktop shortcut
+# ---------------------------
+echo "Creating Desktop shortcut for Chrome..."
+mkdir -p "$DESKTOP_DIR"
+cat > "$DESKTOP_DIR/google-chrome-no-sandbox.desktop" <<EOF
+[Desktop Entry]
+Version=1.0
+Name=Google Chrome (no-sandbox)
+Comment=Google Chrome (launched with --no-sandbox)
+Exec=google-chrome --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=google-chrome
+Categories=Network;WebBrowser;
+StartupNotify=true
+EOF
+chmod +x "$DESKTOP_DIR/google-chrome-no-sandbox.desktop"
 
-:: ---------------------------
-:: Step 6: Run AIO Runtimes installer
-:: ---------------------------
-echo Running AIO Runtimes installer...
-start "" "%TEMP%\aio-runtimes_v2.5.0.exe"
+# ---------------------------
+# Step 4: Install Wine Staging
+# ---------------------------
+echo "Adding 32-bit architecture and WineHQ repository..."
+sudo dpkg --add-architecture i386 || true
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -q -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -q -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/focal/winehq-focal.sources
+sudo apt update
 
-echo ===============================
-echo Setup completed!
-echo - Chrome shortcut added to Desktop.
-echo - AIO Runtimes installer running.
-echo ===============================
-pause
-ENDLOCAL
+echo "Installing Wine Staging + Winetricks + essential libs..."
+sudo apt install --install-recommends -y winehq-staging winetricks cabextract p7zip-full libfaudio0
+
+# ---------------------------
+# Step 5: Initialize Wine
+# ---------------------------
+echo "Initializing Wine environment..."
+export WINEPREFIX="$HOME_DIR/.wine"
+wineboot --init || true
+
+# ---------------------------
+# Step 6: Install common Windows libraries via Winetricks
+# ---------------------------
+echo "Installing core Windows libraries..."
+winetricks -q corefonts vcrun6 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015 vcrun2017 vcrun2019 d3dx9 dxvk msxml6 gdiplus windowscodecs fontsmooth=rgb dotnet20 dotnet35 dotnet40 dotnet45 dotnet48 jre8 || echo "Some winetricks installs failed or required input."
+
+# ---------------------------
+# Step 7: Download & run AIO Runtimes
+# ---------------------------
+echo "Downloading AIO Runtimes..."
+wget -O "$TMP_AIO_EXE" "https://allinoneruntimes.org/files/aio-runtimes_v2.5.0.exe"
+
+echo "Launching AIO Runtimes..."
+wine "$TMP_AIO_EXE"
+
+rm -f "$TMP_AIO_EXE"
+
+# ---------------------------
+# Step 8: Launch winecfg
+# ---------------------------
+echo "Launching Wine configuration window..."
+winecfg || true
+
+echo "===== Setup completed! ====="
+echo "Chrome shortcut created at: $DESKTOP_DIR/google-chrome-no-sandbox.desktop"
+echo "Wine Staging installed with common runtimes."
+echo "AIO Runtimes launched via Wine."
