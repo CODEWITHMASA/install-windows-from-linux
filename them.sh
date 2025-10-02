@@ -1,3 +1,41 @@
-z="
-";HBz='ckgr';TDz='v/nu';jz='e.ta';mBz='es';TEz='n = ';qBz='DG_C';ADz='elif';nEz='d.wr';bEz='figG';qDz='aShe';wDz='var ';cBz='blue';sBz='NT_D';gDz='11-b';vEz='}"';RCz='ns f';Tz='.fra';Sz='s-dl';XDz='g2 -';VBz='trac';Rz='//oc';EEz='for ';aEz='tCon';nCz='back';Xz='loce';uBz='OP)';YBz='ns..';RDz='t" 2';tCz='file';Zz='aces';yz='~/Wi';OFz='!"';Wz='gita';KFz=' "Se';Ez=' ~/t';FDz='DE"*';aBz='tar ';MBz='top.';kEz=','\''Ge';gEz='per'\''';tBz='ESKT';BBz='roun';ABz='n11-';sDz='valu';nz='g th';lBz='them';rEz='mage';NDz='Win1';hz='in11';OEz='i];';Kz='adin';IFz='y."';tDz='ateS';aDz='s/Wi';kz='r.xz';ZBz='."';dEz=' = A';lz='" -O';LEz='+) {';ICz='== *';kCz='11-r';CDz='"$DE';VCz='s se';fBz='/ico';SEz='lugi';WEz='.ima';ACz='op E';rBz='URRE';Iz=' "Do';xz=' -O ';oBz='(ech';LCz=' ]];';DCz='nt: ';IBz='ound';yDz='ops ';AEz='= de';DBz='ght.';iCz='eme ';Hz='echo';lDz='e.pl';uEz=');';EFz=' app';jEz='age'\''';UEz=''\''org';fCz='"';ECz='$DE"';eEz='rray';JBz='..."';FFz='ly t';HFz='uall';Vz='n.di';nDz='shel';RBz='jpg"';JCz='"GNO';pBz='o $X';dDz='ev/n';EDz=' *"K';xBz='ed D';OBz='_356';bCz='rfac';ZCz='desk';iDz='qdbu';iz='-blu';BEz='skto';VDz='plas';mCz='ht"';wEz='else';CCz='onme';dBz='.xz ';rDz='ll e';iEz='e.im';ODz='1-ro';oCz='grou';NEz='ops[';vDz='t "';vz='.tar';xEz=' "Un';pDz='lasm';eCz=' "Wi';pCz='nd p';yBz='eskt';GFz=' man';AFz='orte';GEz=';i<a';uz='ight';gBz='ns';IDz='look';LBz='top4';cz='a/fi';ez='1624';Bz='r -p';SCz='or G';NFz='lete';DFz='ease';KBz='//l.';eDz='ull';oEz='iteC';CBz='d-Li';CFz='. Pl';Nz='.."';PEz='d.wa';rz='23/W';pz='1744';UDz='ll';fEz='('\''Wa';eBz='-C ~';QCz=' and';qz='0117';ZDz='tall';TBz='.jpg';bDz='ght ';lEz='nera';WBz='ting';XEz='ge'\'';';YDz='-ins';fz='9900';wBz='tect';tz='nd-L';JEz='engt';MFz='comp';kBz='C ~/';wCz='/bac';Lz='g ic';dCz='on-t';QBz='qn1.';uDz='crip';qEz='g('\''I';Dz='cons';QDz='Ligh';UBz=' "Ex';KDz='eelt';WCz='t or';Jz='wnlo';IEz='ps.l';nBz='DE=$';Pz=' "ht';YEz='d.cu';NBz='io/p';hDz='lue ';BFz='d DE';oDz='l /P';wz='.xz"';KEz='h;i+';xCz='kgro';mDz='asma';FBz='xz';jDz='s or';BDz=' [[ ';LDz='ool ';HEz='llDe';FCz='if [';LFz='tup ';MCz='n';cEz='roup';kDz='g.kd';Az='mkdi';lCz='-Lig';PCz='ng t';vCz='HOME';SBz='~/ba';Qz='tps:';qCz='ictu';EBz='tar.';tEz='jpg'\''';xDz='allD';cDz='2>/d';MEz='d = ';TCz='NOME';HDz='DE..';Cz=' ~/i';BCz='nvir';bz='/dat';JFz='fi';CEz='ps()';mz=' ~/W';FEz='(i=0';XBz=' ico';bBz='-xf ';pEz='onfi';az='.com';QEz='llpa';jBz='xz -';sCz='ri "';gCz='e gt';hEz=','\''or';iBz='me..';YCz='ome.';GBz='g ba';KCz='ME"*';XCz='g.gn';PDz='und-';Fz='heme';WDz='mapk';yCz='und.';Gz='s';OCz='plyi';VEz='.kde';sEz=''\'', '\''';hBz=' the';dz='les/';aCz='inte';HCz='DE" ';SDz='>/de';PBz='2wi1';Mz='ons.';oz='eme.';GDz='or K';Yz='ansp';jCz='"Win';Uz='1.cd';MDz='-a "';uCz='://$';DDz='" ==';rCz='re-u';yEz='supp';Oz='wget';ZEz='rren';cCz='e ic';vBz=' "De';fDz='/Win';GCz='[ "$';NCz=' "Ap';sz='-rou';UCz='gset';DEz=';';JDz='andf';mEz='l'\'');';REz='perP';gz='03/W';hCz='k-th';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$z$Hz$Iz$Jz$Kz$Lz$Mz$Nz$z$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$hz$iz$jz$kz$z$Hz$Iz$Jz$Kz$nz$oz$Nz$z$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$pz$qz$rz$hz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$z$Hz$Iz$Jz$Kz$GBz$HBz$IBz$JBz$z$Oz$Pz$Qz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$xz$SBz$HBz$IBz$TBz$z$Hz$UBz$VBz$WBz$XBz$YBz$ZBz$z$aBz$bBz$yz$ABz$cBz$vz$dBz$eBz$fBz$gBz$z$Hz$UBz$VBz$WBz$hBz$iBz$ZBz$z$aBz$bBz$yz$ABz$BBz$CBz$DBz$EBz$jBz$kBz$lBz$mBz$z$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$z$Hz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$z$FCz$GCz$HCz$ICz$JCz$KCz$LCz$hBz$MCz$z$Hz$NCz$OCz$PCz$Fz$QCz$XBz$RCz$SCz$TCz$JBz$z$UCz$WBz$VCz$WCz$XCz$YCz$ZCz$MBz$aCz$bCz$cCz$dCz$Fz$eCz$ABz$cBz$fCz$z$UCz$WBz$VCz$WCz$XCz$YCz$ZCz$MBz$aCz$bCz$gCz$hCz$iCz$jCz$kCz$IBz$lCz$mCz$z$UCz$WBz$VCz$WCz$XCz$YCz$ZCz$MBz$nCz$oCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$RBz$z$ADz$BDz$CDz$DDz$EDz$FDz$LCz$hBz$MCz$z$Hz$NCz$OCz$PCz$Fz$QCz$XBz$RCz$GDz$HDz$ZBz$z$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$z$VDz$WDz$XDz$YDz$ZDz$Ez$Fz$aDz$ABz$BBz$CBz$bDz$cDz$dDz$eDz$z$VDz$WDz$XDz$YDz$ZDz$Cz$Dz$fDz$gDz$hDz$cDz$dDz$eDz$z$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$tDz$uDz$vDz$z$wDz$xDz$yBz$yDz$AEz$BEz$CEz$DEz$z$EEz$FEz$GEz$HEz$BEz$IEz$JEz$KEz$LEz$z$MEz$xDz$yBz$NEz$OEz$z$PEz$QEz$REz$SEz$TEz$UEz$VEz$WEz$XEz$z$YEz$ZEz$aEz$bEz$cEz$dEz$eEz$fEz$QEz$gEz$hEz$kDz$iEz$jEz$kEz$lEz$mEz$z$nEz$oEz$pEz$qEz$rEz$sEz$tCz$uCz$vCz$wCz$xCz$yCz$tEz$uEz$z$vEz$z$wEz$z$Hz$xEz$yEz$AFz$BFz$CFz$DFz$EFz$FFz$Fz$GFz$HFz$IFz$z$JFz$z$Hz$KFz$LFz$MFz$NFz$OFz"
+#!/bin/bash
+
+# -------------------------------------------
+# MASA Windows 11 Theme Installer (Minimal)
+# -------------------------------------------
+
+# إنشاء مجلدات للثيمات والأيقونات والخلفيات
+mkdir -p ~/.themes
+mkdir -p ~/.icons
+mkdir -p ~/Pictures
+
+# تحميل الثيم (Win11 Light)
+echo "Downloading Win11 Light theme..."
+wget -O ~/Downloads/Win11-round-Light.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1744011723/Win11-round-Light.tar.xz?response-content-disposition=attachment%3B%2520Win11-round-Light.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T060720Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d344c6a76aede9db263af4cede439a31738001a3034d471996bbf50313b2b15f"
+echo "Extracting theme..."
+tar -xf ~/Downloads/Win11-round-Light.tar.xz -C ~/.themes
+
+# تحميل الأيقونات (Win11 Blue)
+echo "Downloading Win11 Blue icons..."
+wget -O ~/Downloads/Win11-blue.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1624990003/Win11-blue.tar.xz?response-content-disposition=attachment%3B%2520Win11-blue.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T054726Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=680ecccd25e95ededc090f953ec1b40101d49ddff95c2e91a9cc83d8202391f6"
+echo "Extracting icons..."
+tar -xf ~/Downloads/Win11-blue.tar.xz -C ~/.icons
+
+# تحميل الخلفية
+echo "Downloading wallpaper..."
+wget -O ~/Pictures/win-background.jpg "https://l.top4top.io/p_3562wi1qn1.jpg"
+
+# تطبيق الخلفية تلقائيًا (PCManFM / XFCE)
+if command -v pcmanfm &> /dev/null; then
+    pcmanfm --set-wallpaper=$HOME/Pictures/win-background.jpg --wallpaper-mode=stretch
+elif command -v xfconf-query &> /dev/null; then
+    xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-path -s $HOME/Pictures/win-background.jpg --create
+else
+    echo "Cannot set wallpaper automatically. Please set it manually."
+fi
+
+echo "-----------------------------------"
+echo "✅ Win11 Light theme and Win11 Blue icons downloaded."
+echo "✅ Wallpaper applied (or ready to set)."
+echo "⚡ Now open LXAppearance to apply the theme and icons manually."
+echo "-----------------------------------"
