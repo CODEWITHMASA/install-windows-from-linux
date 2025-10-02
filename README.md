@@ -73,14 +73,9 @@ Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-
 
 ---
 
-### 🚀 Installation & Usage
+### 🚀 Installation
 
-1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/CODEWITHMASA/them-windows-to-linux.git
-cd them-windows-to-linux
-chmod +x them.sh
-bash them.sh
-lxappearance
+git clone https://github.com/CODEWITHMASA/them-windows-to-linux.git & cd them-windows-to-linux & chmod +x them.sh & bash them.sh
 ```
