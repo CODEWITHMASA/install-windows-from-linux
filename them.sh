@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# تحميل الثيم + الأيقونات
 apt-get update
 apt-get install -y wget unzip
 
 cd /tmp
-wget -O win10-theme.zip https://github.com/B00merang-Project/Windows-10/archive/refs/heads/master.zip
-unzip win10-theme.zip
-wget -O win10-icons.zip https://github.com/B00merang-Project/Windows-10-Icons/archive/refs/heads/master.zip
-unzip win10-icons.zip
 
-# نقلهم للمكان الصح
-mkdir -p /usr/share/themes /usr/share/icons
-cp -r Windows-10-master /usr/share/themes/Windows-10
-cp -r Windows-10-Icons-master /usr/share/icons/Windows-10-Icons
+# تحميل الثيم
+wget -O win10-theme.zip https://github.com/B00merang-Project/Windows-10/archive/refs/heads/master.zip
+unzip -o win10-theme.zip
+cp -r Windows-10-* /usr/share/themes/Windows-10
+
+# تحميل الأيقونات
+wget -O win10-icons.zip https://github.com/B00merang-Project/Windows-10-Icons/archive/refs/heads/master.zip
+unzip -o win10-icons.zip
+cp -r Windows-10-Icons-* /usr/share/icons/Windows-10-Icons
 
 # إعدادات GTK
 mkdir -p /root/.config/gtk-3.0
@@ -41,4 +41,4 @@ EOF
 # إعادة تحميل Openbox
 openbox --reconfigure
 
-echo "✅ تم تثبيت ثيم Windows 10 وتفعيله!"
+echo "✅ تم تثبيت ثيم Windows 10 + الأيقونات!"
