@@ -3,6 +3,7 @@
 # -------------------------------------------
 # MASA Windows 11 Theme Installer (Minimal)
 # -------------------------------------------
+sudo apt install -y lxappearance gtk2-engines-murrine gtk2-engines-pixbuf gtk3-engines-unico
 
 # إنشاء مجلدات للثيمات والأيقونات والخلفيات
 mkdir -p ~/.themes
