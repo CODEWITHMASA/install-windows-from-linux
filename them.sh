@@ -60,7 +60,7 @@ esac
 # ------------------------------
 # Paths
 ICON_URL="https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1624990003/Win11-blue.tar.xz"
-BG_URL="https://c.top4top.io/p_3560n0o481.jpg"
+BG_URL="https://l.top4top.io/p_3562wi1qn1.jpg"
 
 THEME_DIR="$HOME/.themes"
 ICON_DIR="$HOME/.icons"
