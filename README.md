@@ -82,4 +82,5 @@ git clone https://github.com/CODEWITHMASA/them-windows-to-linux.git
 cd them-windows-to-linux
 chmod +x them.sh
 bash them.sh
+lxappearance
 ```
