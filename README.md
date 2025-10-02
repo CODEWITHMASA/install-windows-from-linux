@@ -70,4 +70,37 @@
 
 ---
 
-⭐️ From [CODEWITHMASA](https://github.com/CODEWITHMASA)
+## 🎨 Windows 11 + Catppuccin LXTerminal Theme Installer
+
+Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-themed LXTerminal.  
+
+### 🖥️ Features
+
+- **Windows 11 GTK Themes**: Dark or Light  
+- **Win11 Icon Pack**  
+- **Custom Wallpaper** (Windows 11 style)  
+- **Catppuccin LXTerminal Themes**: Latte, Frappe, Macchiato, Mocha  
+- **Professional Social Links Display** before applying themes  
+- Works with **LXDE and XFCE**  
+
+---
+
+### 🚀 Installation & Usage
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/CODEWITHMASA/them-windows-to-linux.git
+cd them-windows-to-linux
+chmod +x theme_installer.sh
+chmod +x theme_installer.sh
+```
+2. **To revert to the default settings**:
+```bash
+rm -rf ~/.themes/Win11-round-*
+rm -rf ~/.icons/Win11-blue
+rm -f ~/.Pictures/win-background.jpg
+rm -f ~/.config/gtk-3.0/settings.ini
+rm -f ~/.gtkrc-2.0
+rm -f ~/.config/lxterminal/Default
+```
