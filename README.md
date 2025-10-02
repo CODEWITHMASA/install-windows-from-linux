@@ -1,3 +1,95 @@
-z="
-";HBz='ckgr';TDz='v/nu';jz='e.ta';mBz='es';TEz='n = ';qBz='DG_C';ADz='elif';nEz='d.wr';bEz='figG';qDz='aShe';wDz='var ';cBz='blue';sBz='NT_D';gDz='11-b';vEz='}"';RCz='ns f';Tz='.fra';Sz='s-dl';XDz='g2 -';VBz='trac';Rz='//oc';EEz='for ';aEz='tCon';nCz='back';Xz='loce';uBz='OP)';YBz='ns..';RDz='t" 2';tCz='file';Zz='aces';yz='~/Wi';OFz='!"';Wz='gita';KFz=' "Se';Ez=' ~/t';FDz='DE"*';aBz='tar ';MBz='top.';kEz=','\''Ge';gEz='per'\''';tBz='ESKT';BBz='roun';ABz='n11-';sDz='valu';nz='g th';lBz='them';rEz='mage';NDz='Win1';hz='in11';OEz='i];';Kz='adin';IFz='y."';tDz='ateS';aDz='s/Wi';kz='r.xz';ZBz='."';dEz=' = A';lz='" -O';LEz='+) {';ICz='== *';kCz='11-r';CDz='"$DE';VCz='s se';fBz='/ico';SEz='lugi';WEz='.ima';ACz='op E';rBz='URRE';Iz=' "Do';xz=' -O ';oBz='(ech';LCz=' ]];';DCz='nt: ';IBz='ound';yDz='ops ';AEz='= de';DBz='ght.';iCz='eme ';Hz='echo';lDz='e.pl';uEz=');';EFz=' app';jEz='age'\''';UEz=''\''org';fCz='"';ECz='$DE"';eEz='rray';JBz='..."';FFz='ly t';HFz='uall';Vz='n.di';nDz='shel';RBz='jpg"';JCz='"GNO';pBz='o $X';dDz='ev/n';EDz=' *"K';xBz='ed D';OBz='_356';bCz='rfac';ZCz='desk';iDz='qdbu';iz='-blu';BEz='skto';VDz='plas';mCz='ht"';wEz='else';CCz='onme';dBz='.xz ';rDz='ll e';iEz='e.im';ODz='1-ro';oCz='grou';NEz='ops[';vDz='t "';vz='.tar';xEz=' "Un';pDz='lasm';eCz=' "Wi';pCz='nd p';yBz='eskt';GFz=' man';AFz='orte';GEz=';i<a';uz='ight';gBz='ns';IDz='look';LBz='top4';cz='a/fi';ez='1624';Bz='r -p';SCz='or G';NFz='lete';DFz='ease';KBz='//l.';eDz='ull';oEz='iteC';CBz='d-Li';CFz='. Pl';Nz='.."';PEz='d.wa';rz='23/W';pz='1744';UDz='ll';fEz='('\''Wa';eBz='-C ~';QCz=' and';qz='0117';ZDz='tall';TBz='.jpg';bDz='ght ';lEz='nera';WBz='ting';XEz='ge'\'';';YDz='-ins';fz='9900';wBz='tect';tz='nd-L';JEz='engt';MFz='comp';kBz='C ~/';wCz='/bac';Lz='g ic';dCz='on-t';QBz='qn1.';uDz='crip';qEz='g('\''I';Dz='cons';QDz='Ligh';UBz=' "Ex';KDz='eelt';WCz='t or';Jz='wnlo';IEz='ps.l';nBz='DE=$';Pz=' "ht';YEz='d.cu';NBz='io/p';hDz='lue ';BFz='d DE';oDz='l /P';wz='.xz"';KEz='h;i+';xCz='kgro';mDz='asma';FBz='xz';jDz='s or';BDz=' [[ ';LDz='ool ';HEz='llDe';FCz='if [';LFz='tup ';MCz='n';cEz='roup';kDz='g.kd';Az='mkdi';lCz='-Lig';PCz='ng t';vCz='HOME';SBz='~/ba';Qz='tps:';qCz='ictu';EBz='tar.';tEz='jpg'\''';xDz='allD';cDz='2>/d';MEz='d = ';TCz='NOME';HDz='DE..';Cz=' ~/i';BCz='nvir';bz='/dat';JFz='fi';CEz='ps()';mz=' ~/W';FEz='(i=0';XBz=' ico';bBz='-xf ';pEz='onfi';az='.com';QEz='llpa';jBz='xz -';sCz='ri "';gCz='e gt';hEz=','\''or';iBz='me..';YCz='ome.';GBz='g ba';KCz='ME"*';XCz='g.gn';PDz='und-';Fz='heme';WDz='mapk';yCz='und.';Gz='s';OCz='plyi';VEz='.kde';sEz=''\'', '\''';hBz=' the';dz='les/';aCz='inte';HCz='DE" ';SDz='>/de';PBz='2wi1';Mz='ons.';oz='eme.';GDz='or K';Yz='ansp';jCz='"Win';Uz='1.cd';MDz='-a "';uCz='://$';DDz='" ==';rCz='re-u';yEz='supp';Oz='wget';ZEz='rren';cCz='e ic';vBz=' "De';fDz='/Win';GCz='[ "$';NCz=' "Ap';sz='-rou';UCz='gset';DEz=';';JDz='andf';mEz='l'\'');';REz='perP';gz='03/W';hCz='k-th';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$z$Hz$Iz$Jz$Kz$Lz$Mz$Nz$z$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$hz$iz$jz$kz$z$Hz$Iz$Jz$Kz$nz$oz$Nz$z$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$dz$pz$qz$rz$hz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$z$Hz$Iz$Jz$Kz$GBz$HBz$IBz$JBz$z$Oz$Pz$Qz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$xz$SBz$HBz$IBz$TBz$z$Hz$UBz$VBz$WBz$XBz$YBz$ZBz$z$aBz$bBz$yz$ABz$cBz$vz$dBz$eBz$fBz$gBz$z$Hz$UBz$VBz$WBz$hBz$iBz$ZBz$z$aBz$bBz$yz$ABz$BBz$CBz$DBz$EBz$jBz$kBz$lBz$mBz$z$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$z$Hz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$z$FCz$GCz$HCz$ICz$JCz$KCz$LCz$hBz$MCz$z$Hz$NCz$OCz$PCz$Fz$QCz$XBz$RCz$SCz$TCz$JBz$z$UCz$WBz$VCz$WCz$XCz$YCz$ZCz$MBz$aCz$bCz$cCz$dCz$Fz$eCz$ABz$cBz$fCz$z$UCz$WBz$VCz$WCz$XCz$YCz$ZCz$MBz$aCz$bCz$gCz$hCz$iCz$jCz$kCz$IBz$lCz$mCz$z$UCz$WBz$VCz$WCz$XCz$YCz$ZCz$MBz$nCz$oCz$pCz$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$RBz$z$ADz$BDz$CDz$DDz$EDz$FDz$LCz$hBz$MCz$z$Hz$NCz$OCz$PCz$Fz$QCz$XBz$RCz$GDz$HDz$ZBz$z$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$z$VDz$WDz$XDz$YDz$ZDz$Ez$Fz$aDz$ABz$BBz$CBz$bDz$cDz$dDz$eDz$z$VDz$WDz$XDz$YDz$ZDz$Cz$Dz$fDz$gDz$hDz$cDz$dDz$eDz$z$iDz$jDz$kDz$lDz$mDz$nDz$oDz$pDz$qDz$rDz$sDz$tDz$uDz$vDz$z$wDz$xDz$yBz$yDz$AEz$BEz$CEz$DEz$z$EEz$FEz$GEz$HEz$BEz$IEz$JEz$KEz$LEz$z$MEz$xDz$yBz$NEz$OEz$z$PEz$QEz$REz$SEz$TEz$UEz$VEz$WEz$XEz$z$YEz$ZEz$aEz$bEz$cEz$dEz$eEz$fEz$QEz$gEz$hEz$kDz$iEz$jEz$kEz$lEz$mEz$z$nEz$oEz$pEz$qEz$rEz$sEz$tCz$uCz$vCz$wCz$xCz$yCz$tEz$uEz$z$vEz$z$wEz$z$Hz$xEz$yEz$AFz$BFz$CFz$DFz$EFz$FFz$Fz$GFz$HFz$IFz$z$JFz$z$Hz$KFz$LFz$MFz$NFz$OFz"
+<h1 align="center">Hey 👋 What's Up? I'm MASA</h1>
+
+###
+
+<div align="center">
+  <img src="https://c.top4top.io/p_3560n0o481.jpg" height="200" alt="CODE WITH MASA Banner" />
+</div>
+
+###
+
+<h2 align="center">💻 Reverse Engineer | Python & C# Expert | Code Enthusiast</h2>
+
+---
+
+### 🧰 Tech & Tools
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=py,cs,cpp,c,java,php,js,html,css,go,perl,vb,sql,assembly" height="45"/>
+</div>
+
+---
+
+### 🌍 Connect With Me
+<div align="center">
+  <a href="https://www.facebook.com/CODEWITHMASA">
+    <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+  </a>
+  <a href="https://www.instagram.com/codewithmasa">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  </a>
+  <a href="https://x.com/CODEWITHMASA">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  </a>
+  <a href="https://www.youtube.com/@CODEWITHMASA">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  </a>
+  <a href="https://t.me/CODEWITHMASA">
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
+  </a>
+  <a href="https://github.com/CODEWITHMASA">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://www.codewithmasa.giize.com">
+    <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
+</div>
+
+---
+
+### 📊 GitHub Stats
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=CODEWITHMASA&theme=dracula&hide_border=false&border_radius=5" height="150" alt="streak graph" />
+  <img src="https://github-readme-stats.vercel.app/api?username=CODEWITHMASA&show_icons=true&theme=dracula&hide_border=false" height="150" alt="stats graph" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CODEWITHMASA&layout=compact&theme=dracula&hide_border=false" height="150" alt="languages graph" />
+  <img src="https://github-profile-trophy.vercel.app/?username=CODEWITHMASA&theme=dracula&row=1&column=6&margin-w=10" height="150" alt="trophy graph" />
+</div>
+
+---
+
+### 📌 About Me
+
+- 🎯 Specializes in **Reverse Engineering & Security Research**  
+- 🐍 Strong in **Python, C#, Assembly**  
+- 🔧 Skilled with **C, C++, Java, PHP, JavaScript, Go, Perl, VB, SQL, HTML, CSS**  
+- 🚀 Services: **REVERSE ENGINEERING - METHODS - DATA FRESH - FULL ACTIVATED PROGRAMS - COURSES - MARKETING TOOL**  
+- 📺 My channel: [CODE WITH MASA](https://www.youtube.com/@CODEWITHMASA)  
+- 📫 Contact me via [Telegram](https://t.me/MrMasaOfficial)  
+
+---
+
+## 🎨 Windows 11 + Catppuccin LXTerminal Theme Installer
+
+Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-themed LXTerminal.  
+
+### 🖥️ Features
+
+- **Windows 11 GTK Themes** Light  
+- **Win11 Icon Pack**  
+- **Custom Wallpaper** (Windows 11 style)  
+- Works with **LXDE and XFCE**  
+
+---
+
+### 🚀 Installation & Usage
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/CODEWITHMASA/them-windows-to-linux.git
+cd them-windows-to-linux
+chmod +x them.sh
+bash them.sh
+```
