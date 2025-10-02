@@ -1,32 +1,40 @@
 #!/bin/bash
 
-# -------------------------------------------
-# MASA Windows 11 Theme Installer (Minimal)
-# -------------------------------------------
-sudo apt install -y lxappearance gtk2-engines-murrine gtk2-engines-pixbuf gtk3-engines-unico
+# =========================================
+# MASA Windows 11 Theme Installer (Auto)
+# Works on minimal LXDE/XFCE (Docker, Cloud Shell)
+# =========================================
 
-# إنشاء مجلدات للثيمات والأيقونات والخلفيات
+# ===== CONFIG =====
+THEME="Win11-round-Light"   # options: Win11-round-Light, Win11-round-Dark
+ICON="Win11-blue"
+WALLPAPER_URL="https://l.top4top.io/p_3562wi1qn1.jpg"
+CATPPUCCIN_FLAVOR="Mocha"   # options: Latte, Frappe, Macchiato, Mocha
+
+# ===== DIRECTORIES =====
 mkdir -p ~/.themes
 mkdir -p ~/.icons
 mkdir -p ~/Pictures
+mkdir -p ~/.config/gtk-3.0
+mkdir -p ~/.config/lxterminal
 
-# تحميل الثيم (Win11 Light)
-echo "Downloading Win11 Light theme..."
-wget -O ~/Downloads/Win11-round-Light.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1744011723/Win11-round-Light.tar.xz?response-content-disposition=attachment%3B%2520Win11-round-Light.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T060720Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=d344c6a76aede9db263af4cede439a31738001a3034d471996bbf50313b2b15f"
+# ===== DOWNLOAD & EXTRACT THEME =====
+echo "Downloading $THEME theme..."
+wget -O ~/Downloads/$THEME.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1744011723/$THEME.tar.xz?response-content-disposition=attachment"
 echo "Extracting theme..."
-tar -xf ~/Downloads/Win11-round-Light.tar.xz -C ~/.themes
+tar -xf ~/Downloads/$THEME.tar.xz -C ~/.themes
 
-# تحميل الأيقونات (Win11 Blue)
-echo "Downloading Win11 Blue icons..."
-wget -O ~/Downloads/Win11-blue.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1624990003/Win11-blue.tar.xz?response-content-disposition=attachment%3B%2520Win11-blue.tar.xz&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=RWJAQUNCHT7V2NCLZ2AL%2F20251002%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251002T054726Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=680ecccd25e95ededc090f953ec1b40101d49ddff95c2e91a9cc83d8202391f6"
+# ===== DOWNLOAD & EXTRACT ICONS =====
+echo "Downloading $ICON icons..."
+wget -O ~/Downloads/$ICON.tar.xz "https://ocs-dl.fra1.cdn.digitaloceanspaces.com/data/files/1624990003/Win11-blue.tar.xz?response-content-disposition=attachment"
 echo "Extracting icons..."
-tar -xf ~/Downloads/Win11-blue.tar.xz -C ~/.icons
+tar -xf ~/Downloads/$ICON.tar.xz -C ~/.icons
 
-# تحميل الخلفية
+# ===== DOWNLOAD WALLPAPER =====
 echo "Downloading wallpaper..."
-wget -O ~/Pictures/win-background.jpg "https://l.top4top.io/p_3562wi1qn1.jpg"
+wget -O ~/Pictures/win-background.jpg "$WALLPAPER_URL"
 
-# تطبيق الخلفية تلقائيًا (PCManFM / XFCE)
+# ===== APPLY WALLPAPER =====
 if command -v pcmanfm &> /dev/null; then
     pcmanfm --set-wallpaper=$HOME/Pictures/win-background.jpg --wallpaper-mode=stretch
 elif command -v xfconf-query &> /dev/null; then
@@ -35,8 +43,33 @@ else
     echo "Cannot set wallpaper automatically. Please set it manually."
 fi
 
+# ===== APPLY GTK3 SETTINGS =====
+cat > ~/.config/gtk-3.0/settings.ini <<EOL
+[Settings]
+gtk-theme-name = $THEME
+gtk-icon-theme-name = $ICON
+gtk-font-name = Sans 10
+gtk-cursor-theme-name = DMZ-White
+EOL
+
+# ===== APPLY GTK2 SETTINGS =====
+echo "gtk-theme-name=\"$THEME\"" > ~/.gtkrc-2.0
+echo "gtk-icon-theme-name=\"$ICON\"" >> ~/.gtkrc-2.0
+echo "gtk-font-name=\"Sans 10\"" >> ~/.gtkrc-2.0
+
+# ===== APPLY LXTerminal Catppuccin Theme =====
+LXTERMINAL_CONF="$HOME/.config/lxterminal/Default"
+cat > $LXTERMINAL_CONF <<EOL
+[general]
+fontname=Monospace 12
+color_scheme=$CATPPUCCIN_FLAVOR
+EOL
+
+# ===== COMPLETE =====
 echo "-----------------------------------"
-echo "✅ Win11 Light theme and Win11 Blue icons downloaded."
-echo "✅ Wallpaper applied (or ready to set)."
-echo "⚡ Now open LXAppearance to apply the theme and icons manually."
+echo "✅ Theme: $THEME applied"
+echo "✅ Icons: $ICON applied"
+echo "✅ Wallpaper applied (or ready to set)"
+echo "✅ LXTerminal Catppuccin flavor: $CATPPUCCIN_FLAVOR"
+echo "⚡ If LXTerminal does not refresh, close and reopen it."
 echo "-----------------------------------"
