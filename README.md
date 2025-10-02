@@ -46,18 +46,11 @@
 
 ---
 
-### 📊 GitHub Stats
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=CODEWITHMASA&theme=dracula&hide_border=false&border_radius=5" height="150" alt="streak graph" />
-  <img src="https://github-readme-stats.vercel.app/api?username=CODEWITHMASA&show_icons=true&theme=dracula&hide_border=false" height="150" alt="stats graph" />
-</div>
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=CODEWITHMASA&layout=compact&theme=dracula&hide_border=false" height="150" alt="languages graph" />
-  <img src="https://github-profile-trophy.vercel.app/?username=CODEWITHMASA&theme=dracula&row=1&column=6&margin-w=10" height="150" alt="trophy graph" />
-</div>
 
----
+
+
+
 
 ### 📌 About Me
 
@@ -92,8 +85,8 @@ Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-
 ```bash
 git clone https://github.com/CODEWITHMASA/them-windows-to-linux.git
 cd them-windows-to-linux
-chmod +x theme_installer.sh
-chmod +x theme_installer.sh
+chmod +x them.sh
+bash them.sh
 ```
 2. **To revert to the default settings**:
 ```bash
