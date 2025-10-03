@@ -77,11 +77,11 @@ Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-
 
 
 ```bash
-git clone https://github.com/CODEWITHMASA/install-windows-from-linux && cd install-windows-from-linux && chmod +x them.sh && bash them.sh
+sudo apt update - y && sudo apt upgrade -y && sudo apt install git -y && git clone https://github.com/CODEWITHMASA/install-windows-from-linux && cd install-windows-from-linux && chmod +x them.sh && bash them.sh
 ```
 
 ### 🚀 Installation Exe
 
 ```bash
-git clone https://github.com/CODEWITHMASA/install-windows-from-linux && cd install-windows-from-linux && chmod +x them.sh && bash install-exe.sh
+sudo apt update - y && sudo apt upgrade -y && sudo apt install git -y && git clone https://github.com/CODEWITHMASA/install-windows-from-linux && cd install-windows-from-linux && chmod +x them.sh && bash install-exe.sh
 ```
