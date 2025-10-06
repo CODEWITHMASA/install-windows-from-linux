@@ -1,54 +1,81 @@
 #!/bin/bash
-# 🧩 Ultimate Auto Wine Setup Script
+# 🧩 Ultimate Auto Wine Setup Script (MASA Edition)
 # Ubuntu 20.04.6 LTS
-# Author: ChatGPT
+# Author: MASA
+# Youtube: CODE WITH MASA
 
 set -e
 
-echo "🔄 تحديث النظام وإضافة دعم 32 بت..."
+# 💬 Show MASA credits
+clear
+echo "===================================================="
+echo "                💻  MASA SETUP SCRIPT 💻"
+echo "===================================================="
+echo "Author  : MASA"
+echo "Channel : CODE WITH MASA"
+echo ""
+echo "Facebook :  https://www.facebook.com/CODEWITHMASA"
+echo "Instagram:  https://www.instagram.com/codewithmasa"
+echo "Tiktok   :  https://www.tiktok.com/@CODEWITHMASA"
+echo "Youtube  :  https://www.youtube.com/@CODEWITHMASA"
+echo "Telegram Active :  https://t.me/+_R91sWmKBacyZTc0"
+echo "Telegram Page   :  https://t.me/CODEWITHMASA"
+echo "Github   :  https://github.com/CODEWITHMASA"
+echo "X (Twitter):  https://x.com/CODEWITHMASA"
+echo "Website  :  https://codewithmasa.blogspot.com/"
+echo "Telegram Group  :  https://t.me/GROUPCODEWITHMASA"
+echo "Telegram Contact: https://t.me/MrMasaOfficial"
+echo "===================================================="
+sleep 3
+clear
+
+echo "🧹 Removing Google Chrome repo to avoid GPG errors..."
+sudo rm -f /etc/apt/sources.list.d/google-chrome.list
+
+echo "🔄 Updating system and adding 32-bit architecture..."
 sudo dpkg --add-architecture i386
 sudo apt update -y
 sudo apt upgrade -y
 
-echo "🍷 تثبيت Wine والإضافات..."
+echo "🍷 Installing Wine and dependencies..."
 sudo apt install -y wine64 wine32 wine-stable winbind winetricks cabextract wget unzip zenity
 
-echo "⚙️ تهيئة Wine لأول مرة..."
+echo "⚙️ Initializing Wine environment..."
 wineboot --init
 sleep 5
 
-echo "🧰 تثبيت مكتبات أساسية (.NET + Visual C++ + خطوط)..."
+echo "🧰 Installing core runtimes (.NET, Visual C++, Fonts)..."
 winetricks -q corefonts vcrun6sp6 vcrun2010 vcrun2012 vcrun2013 vcrun2015 vcrun2019 dotnet40 dotnet45 dotnet472
 
-echo "📦 إعداد مجلد التثبيت..."
+echo "📦 Creating setup directory..."
 mkdir -p ~/wine_setup
 cd ~/wine_setup
 
-echo "⬇️ تحميل أداة All in One Runtimes..."
+echo "⬇️ Downloading All in One Runtimes..."
 wget -O aio-runtimes_v2.5.0.exe "https://allinoneruntimes.org/files/aio-runtimes_v2.5.0.exe"
 
-echo "🚀 تشغيل الأداة داخل Wine..."
-wine aio-runtimes_v2.5.0.exe || echo "⚠️ يمكنك تشغيلها يدويًا لاحقًا."
+echo "🚀 Running All in One Runtimes inside Wine..."
+wine aio-runtimes_v2.5.0.exe || echo "⚠️ You can run it manually later."
 
-echo "🪟 تثبيت Bottles و PlayOnLinux..."
+echo "🪟 Installing GUI tools (Bottles & PlayOnLinux)..."
 sudo apt install -y playonlinux bottles
 
 echo ""
-echo "📂 اختَر ملف exe اللي عايز تشغّله (هتظهر نافذة اختيار)..."
-EXE_PATH=$(zenity --file-selection --title="اختَر ملف exe لتشغيله بـ Wine" --file-filter="*.exe")
+echo "📂 Please select the .exe file you want to run (GUI window will open)..."
+EXE_PATH=$(zenity --file-selection --title="Select .exe file to run with Wine" --file-filter="*.exe")
 
 if [[ -z "$EXE_PATH" ]]; then
-  echo "❌ لم يتم اختيار أي ملف. الخروج..."
+  echo "❌ No file selected. Exiting..."
   exit 1
 fi
 
-echo "🚀 تشغيل البرنامج داخل Wine..."
+echo "🚀 Running the selected program with Wine..."
 wine "$EXE_PATH"
 
 APP_NAME=$(basename "$EXE_PATH" .exe)
 DESKTOP_DIR="$HOME/Desktop"
 
-echo "🧩 إنشاء اختصار على سطح المكتب للبرنامج..."
+echo "🧩 Creating desktop shortcut for the program..."
 cat <<EOF > "$DESKTOP_DIR/${APP_NAME}.desktop"
 [Desktop Entry]
 Version=1.0
@@ -63,7 +90,11 @@ EOF
 
 chmod +x "$DESKTOP_DIR/${APP_NAME}.desktop"
 
-echo "✅ تم إنشاء الاختصار على سطح المكتب باسم: ${APP_NAME}.desktop"
+echo "✅ Shortcut created on Desktop: ${APP_NAME}.desktop"
 echo ""
-echo "🎉 تم تشغيل البرنامج وتثبيت البيئة بالكامل بنجاح!"
-echo "💡 يمكنك الآن فتح ${APP_NAME} مباشرة من سطح المكتب."
+echo "🎉 Environment ready!"
+echo "💡 You can now open ${APP_NAME} directly from your desktop."
+echo "===================================================="
+echo "Setup completed by: MASA (CODE WITH MASA)"
+echo "Visit: https://www.youtube.com/@CODEWITHMASA"
+echo "===================================================="
