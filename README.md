@@ -60,7 +60,7 @@
 
 ---
 
-## 🎨 Windows 11 + Catppuccin LXTerminal Theme Installer
+## 🎨 Windows 11 + Exe + Catppuccin LXTerminal Theme Installer
 
 Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-themed LXTerminal.  
 
@@ -69,7 +69,8 @@ Transform your Linux desktop (LXDE/XFCE) to **Windows 11 look** with Catppuccin-
 - **Windows 11 GTK Themes** Light  
 - **Win11 Icon Pack**  
 - **Custom Wallpaper** (Windows 11 style)  
-- Works with **LXDE and XFCE**  
+- Works with **LXDE and XFCE**
+- Install Exe  
 
 ---
 
