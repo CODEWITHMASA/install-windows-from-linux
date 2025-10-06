@@ -3,6 +3,7 @@
 # Ubuntu 20.04.6 LTS
 # Author: MASA
 # Youtube: CODE WITH MASA
+# Version: 1.3 — Opens All-in-One Runtimes after setup completion
 
 set -e
 
@@ -35,57 +36,64 @@ echo -e "${GREEN}Website  :${RESET}  https://codewithmasa.blogspot.com/"
 echo -e "${GREEN}Telegram Group  :${RESET}  https://t.me/GROUPCODEWITHMASA"
 echo -e "${GREEN}Telegram Contact:${RESET}  https://t.me/MrMasaOfficial"
 echo -e "${CYAN}====================================================${RESET}"
-
-for i in 3 2 1; do
-  echo -e "${YELLOW}Starting installation in ${i}...${RESET}"
-  sleep 1
-done
+sleep 3
 clear
 
+# 🧹 Fix Chrome repo error
 echo -e "${BLUE}🧹 Removing Google Chrome repo to avoid GPG errors...${RESET}"
 sudo rm -f /etc/apt/sources.list.d/google-chrome.list
 
+# 🔄 Update & architecture
 echo -e "${CYAN}🔄 Updating system and adding 32-bit architecture...${RESET}"
 sudo dpkg --add-architecture i386
 sudo apt update -y
 sudo apt upgrade -y
 
+# 🍷 Install Wine
 echo -e "${YELLOW}🍷 Installing Wine and dependencies...${RESET}"
 sudo apt install -y wine64 wine32 wine-stable winbind winetricks cabextract wget unzip zenity
 
+# ⚙️ Init Wine
 echo -e "${BLUE}⚙️ Initializing Wine environment...${RESET}"
 wineboot --init
 sleep 5
 
+# 🧰 Winetricks runtimes
 echo -e "${CYAN}🧰 Installing core runtimes (.NET, Visual C++, Fonts)...${RESET}"
 winetricks -q corefonts vcrun6sp6 vcrun2010 vcrun2012 vcrun2013 vcrun2015 vcrun2019 dotnet40 dotnet45 dotnet472
 
+# 🧩 Create setup folder
 echo -e "${BLUE}📦 Creating setup directory...${RESET}"
 mkdir -p ~/wine_setup
 cd ~/wine_setup
 
-echo -e "${YELLOW}⬇️ Downloading All in One Runtimes...${RESET}"
-wget -O aio-runtimes_v2.5.0.exe "https://allinoneruntimes.org/files/aio-runtimes_v2.5.0.exe"
+# ⬇️ Download All-in-One Runtimes if missing
+AIO_PATH="$HOME/wine_setup/aio-runtimes_v2.5.0.exe"
+if [ ! -f "$AIO_PATH" ]; then
+  echo -e "${YELLOW}⬇️ Downloading All-in-One Runtimes...${RESET}"
+  wget -O "$AIO_PATH" "https://allinoneruntimes.org/files/aio-runtimes_v2.5.0.exe"
+else
+  echo -e "${GREEN}✅ All-in-One Runtimes already downloaded.${RESET}"
+fi
 
-echo -e "${GREEN}🚀 Running All in One Runtimes inside Wine...${RESET}"
-wine aio-runtimes_v2.5.0.exe || echo -e "${RED}⚠️ You can run it manually later.${RESET}"
-
+# 🪟 GUI Tools
 echo -e "${CYAN}🪟 Installing GUI tools (Bottles & PlayOnLinux)...${RESET}"
 sudo apt install -y playonlinux bottles
 
-echo ""
-echo -e "${YELLOW}🔍 Searching for .exe files in current directory...${RESET}"
-
-# Find all .exe files in the script's directory
+# 🧩 Auto-run any EXE beside script
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 EXE_FILES=("$SCRIPT_DIR"/*.exe)
 
 if [ -e "${EXE_FILES[0]}" ]; then
-  echo -e "${GREEN}✅ Found ${#EXE_FILES[@]} EXE file(s). Running them automatically...${RESET}"
+  echo -e "${GREEN}🚀 Found ${#EXE_FILES[@]} EXE file(s). Running them automatically...${RESET}"
   for EXE in "${EXE_FILES[@]}"; do
-    echo -e "${CYAN}🚀 Launching: ${EXE}${RESET}"
-    wine "$EXE"
-    
+    if [ "$(realpath "$EXE")" = "$(realpath "$AIO_PATH")" ]; then
+      continue
+    fi
+
+    echo -e "${CYAN}➡️ Launching: ${EXE}${RESET}"
+    wine "$EXE" || echo -e "${RED}⚠️ Failed to launch ${EXE}.${RESET}"
+
     APP_NAME=$(basename "$EXE" .exe)
     DESKTOP_DIR="$HOME/Desktop"
     echo -e "${YELLOW}🧩 Creating desktop shortcut for ${APP_NAME}...${RESET}"
@@ -96,7 +104,7 @@ Version=1.0
 Type=Application
 Name=${APP_NAME}
 Comment=Run ${APP_NAME} with Wine
-Exec=wine "$EXE"
+Exec=wine "${EXE}"
 Icon=wine
 Terminal=false
 Categories=Utility;Wine;
@@ -106,12 +114,23 @@ EOF
     echo -e "${GREEN}✅ Shortcut created: ${DESKTOP_DIR}/${APP_NAME}.desktop${RESET}"
   done
 else
-  echo -e "${RED}❌ No .exe files found in script directory. Place your .exe file next to this script and rerun it.${RESET}"
+  echo -e "${RED}❌ No .exe files found beside this script.${RESET}"
 fi
 
+# ✅ All setup done — now open All-in-One Runtimes
+if [ -f "$AIO_PATH" ]; then
+  echo ""
+  echo -e "${BOLD}${BLUE}🚀 Opening All-in-One Runtimes now to complete setup...${RESET}"
+  wine "$AIO_PATH"
+  echo -e "${GREEN}✅ All-in-One Runtimes installer launched successfully.${RESET}"
+else
+  echo -e "${RED}❌ aio-runtimes_v2.5.0.exe not found at ${AIO_PATH}.${RESET}"
+fi
+
+# ✅ Finish
 echo ""
-echo -e "${GREEN}🎉 All done!${RESET}"
-echo -e "${YELLOW}💡 You can now launch your programs directly from the desktop shortcuts.${RESET}"
+echo -e "${GREEN}🎉 All setup steps are complete!${RESET}"
+echo -e "${YELLOW}💡 You can now launch your installed programs from Desktop shortcuts.${RESET}"
 echo -e "${CYAN}====================================================${RESET}"
 echo -e "${BOLD}${BLUE}Setup completed by: MASA (CODE WITH MASA)${RESET}"
 echo -e "${BOLD}${YELLOW}Visit: https://www.youtube.com/@CODEWITHMASA${RESET}"
